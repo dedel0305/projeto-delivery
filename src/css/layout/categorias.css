@@ -1,0 +1,75 @@
+/* Estilos para a seção de Categorias */
+
+.categorias {
+    padding-top: 3rem; 
+    padding-bottom: 3rem; 
+    background-color: #ffffff; 
+}
+
+.categorias .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+}
+
+.categorias h2 {
+    font-size: 1.875rem; 
+    font-weight: 700; 
+    text-align: center; 
+    margin-bottom: 2rem; 
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+}
+
+.categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.2s;
+}
+
+.categoria-item:hover {
+    background-color: #f9fafb; 
+}
+
+.categoria-item .categoria-icone {
+    width: 4rem; 
+    height: 4rem; 
+    background-color: #ffedd5; 
+    border-radius: 9999px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem; 
+    transition: background-color 0.2s;
+}
+
+.categoria-item:hover .categoria-icone {
+    background-color: #fee2b1; 
+}
+
+.categoria-item h3 {
+    font-weight: 700; 
+    font-size: 1.125rem; 
+}
+
+
+@media (min-width: 768px) {
+    .categorias-grid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 2rem; 
+    }
+
+    .categoria-item .categoria-icone {
+        width: 5rem; 
+        height: 5rem;
+    }
+}
