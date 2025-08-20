@@ -16,6 +16,7 @@
     inset: 0;
     overflow: hidden;
     opacity: 0;
+    transition: .5s; /* uma transição nas imagens do slide */
 }
 
 .slider .slider-img img{
