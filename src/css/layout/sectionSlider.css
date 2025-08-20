@@ -15,6 +15,8 @@
     position: absolute;
     inset: 0;
     overflow: hidden;
+    opacity: 0;
+    transition: .5s; /* uma transição nas imagens do slide */
 }
 
 .slider .slider-img img{
@@ -31,9 +33,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 2px solid red;
 }
-
 .slider .slider-img .texto-slider {
     position: absolute;
     left: 10%;
@@ -42,7 +42,7 @@
     z-index: 1;
     width: 80%;
     max-width: 600px;
-    border: 2px solid red;
+   
 }
 
 .slider .slider-img .texto-slider h2 {
@@ -63,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2222222222;
 }
 
 .setas button {
@@ -74,6 +75,8 @@
     cursor: pointer;
     font-size: 1.2rem;
     transition: 1.2s;
+   
+   
 }
 
 .setas button:hover{
@@ -88,12 +91,13 @@
     position: absolute;
     left: 0;
     bottom: 50px;
-    z-index: 777777;
+    z-index: 77777777777;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+  
 }
 
 .btn-nav-img .btn-nav {
@@ -103,8 +107,42 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 1s;
+  
 }
 
 .btn-nav-img .btn-nav:hover{
+    background-color: #fff;
+}
+
+/* animação dos textos no slider */
+
+@keyframes animatexto{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    
+}
+
+.slider .slider-img.ativo h2, /* animação para o h2 e paragrafo */
+ .slider .slider-img.ativo p{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: animatexto .5s ease-in-out .7s forwards;
+}
+
+.slider .slider-img.ativo h2 { /* animação para iniciar o h2 ,tera um atraso e 1s */
+    animation-delay: 1s ;
+}
+
+.slider-container .slider-img.ativo {
+    opacity: 1;
+    z-index: 111111111;
+}
+
+/* adicionando a class ativo no primeiro de navegação do slider. fica selecionado o primeiro botão */
+
+.btn-nav-img .btn-nav.ativo{
     background-color: #fff;
 }
