@@ -19,14 +19,14 @@
 
 .slider .slider-img img{
     width: 100%;
-    height: 60%;
+    height: 100%;
     object-fit: cover;
 }
 
 .slider .slider-img::after {
     content: "";
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-image: linear-gradient(to top, #000, transparent);
     position: absolute;
     top: 0;
@@ -79,4 +79,32 @@
 .setas button:hover{
     background-color: #fff;
 
+}
+
+/* estilos dos botoes de navegaçoes */
+
+.btn-nav-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 777777;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.btn-nav-img .btn-nav {
+    width: 30px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-nav-img .btn-nav:hover{
+    background-color: #fff;
 }
