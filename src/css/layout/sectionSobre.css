@@ -1,0 +1,56 @@
+.boxSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 30px;
+}
+
+.boxSobre h2 {
+    font-size: 1.9rem;
+     font-weight: 800;
+}
+
+.boxSobre p {
+    font-size: 1.2rem;
+}
+
+.imagem2 img {
+    border-radius: 10px;
+}
+
+
+
+
+.nossaHist {
+    margin-left: 30px;
+    cursor: pointer;
+    width: 176px;
+    height: 65px;
+    background-color: #ea580c;
+    border:3px solid;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    
+}
+
+.contatoSobre {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 120px;
+    height: 57px;
+    background-color: #fff;
+    border:2px solid #ea580c;
+    text-align: center;
+    border-radius: 27px;
+    color: #ea580c;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    
+    
+}
