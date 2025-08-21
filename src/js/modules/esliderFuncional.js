@@ -1,5 +1,4 @@
 
-
 let imgSlider = document.querySelectorAll('.slider-container .slider-img');
 let btnPox = document.querySelector('#proximo')
 let btnAnter = document.querySelector('#anterior')
@@ -45,3 +44,5 @@ btnNav.forEach((btn, indice)=>{
     mostrarSlider(  )
 })
 })
+
+
