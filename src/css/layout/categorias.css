@@ -34,6 +34,7 @@
     padding: 1rem; 
     border-radius: 0.5rem; 
     transition: background-color 0.2s;
+    text-decoration: none; /* Remove underline */
 }
 
 .categoria-item:hover {
@@ -59,6 +60,7 @@
 .categoria-item h3 {
     font-weight: 700; 
     font-size: 1.125rem; 
+    color: #000; /* Set text color to black */
 }
 
 
