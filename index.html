@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="src/assets/ico/ico-pizza.svg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/layout/style.css">
-    <link rel="stylesheet" href="src/css/layout/cardapio.css">
     <script type="module" src="src/js/modules/script.js" defer></script>
     
     <title>PizzaGo</title>
@@ -29,7 +28,7 @@
             </nav>
             <div class="carrinho-btn">
                 <img class="carrinho" src="src/assets/ico/carrinho-carrinho-header.png" alt="" width="25px">
-                 <button onclick="abrirModal()" class="btn-header">entrar</button>
+                 <button type="button" class="btn-header">entrar</button>
             </div>
            
         </div>
@@ -44,19 +43,21 @@
                 <div class="slider-img">
                     <img src="src/assets/img/pizza2.jpg" alt="">
                     <div class="texto-slider">
-                        <h2>Pizzas Artesanais</h2>
-                        <p> Pizzas suculenta, queijo derretido e massa deliciosas. A combinação perfeita para matar sua fome!</p>
+                        <h2>Nossa Pizza Artesanal</h2>
+                        <p> Descubra a arte de uma pizza feita à mão. Nossa massa de longa fermentação, molho de tomate italiano e ingredientes de alta qualidade se unem para criar uma experiência única. Sabor, crocância e leveza em cada pedaço.</p>
+                    
                     </div>
                 </div>
                 <div class="slider-img">
-                    <img src="src/assets/img/pizza3.jpg" alt="">
+                    <img src="src/assets/img/bibida3.jpg" alt="">
                     <div class="texto-slider">
-                        <h2>Pizzas Artesanais</h2>
-                        <p> Pizzas suculenta, queijo derretido e massa deliciosas. A combinação perfeita para matar sua fome!</p>
+                        <h2>A Cerveja para sua Pizza</h2>
+                        <p> Uma seleção de cervejas geladas e artesanais que foram escolhidas para complementar o sabor de cada fatia. De uma leve Lager a uma IPA encorpada, encontre a harmonização ideal para sua pizza favorita</p>
+                        
                     </div>
                 </div>
                 <div class="slider-img ativo">
-                    <img src="src/assets/img/pizza8.jpg" alt="">
+                    <img src="src/assets/img/pizza9.jpg" alt="">
                     <div class="texto-slider">
                         <h2>Pizzas Artesanais</h2>
                         <p> Pizzas suculenta, queijo derretido e massa deliciosas. A combinação perfeita para matar sua fome!</p>
@@ -196,12 +197,17 @@
        <div class="modal">
         <h2>Entrar</h2>
             <form action="">
-                <button class="fechar" id="fechar">x</button>
+                <button type="button" class="fechar" id="fechar">x</button>
                 <input type="text" placeholder="Nome completo">
                 <input type="text" placeholder="E-mail">
                 <input type="password" placeholder="senha">
 
-                <button class="btn-form">entrar</button>
+                <button type="button" class="btn-form">entrar</button>
+
+                <P class="texto-cadastro">Não tem uma conta? <!-- adicionando opção de cadastro ao login -->
+                    <a class="link-cadastro" href="#"> Cadastre-se agora</a>
+                </P>
+                
             </form>
        </div>
     </div>

@@ -77,6 +77,17 @@
     cursor: pointer;  
 }
 
+/* opçao de casdastro do login */
+.texto-cadastro{
+    padding-top: 2rem;
+}
+
+/* link do cadastro */
+.link-cadastro{
+    text-decoration: none;
+    color: chocolate;
+}
+
 /* adicionando uma ação para o modal via javascript */
 
 .janela-modal.abrir{
