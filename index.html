@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="src/assets/ico/ico-pizza.svg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/layout/style.css">
     <link rel="stylesheet" href="src/css/layout/cardapio.css">
     <script type="module" src="src/js/modules/script.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="src/css/layout/style.css">
+    
     <title>PizzaGo</title>
 </head>
 <body>
@@ -189,6 +189,20 @@
         </div>
     </section>
 
+    <!-- modal do botão de login -->
+    <div class="janela-modal" id="janela-modal">
+       <div class="modal">
+        <h2>Entrar</h2>
+            <form action="">
+                <button class="fechar" id="fechar">x</button>
+                <input type="text" placeholder="Nome completo">
+                <input type="text" placeholder="E-mail">
+                <input type="password" placeholder="senha">
+
+                <button class="btn-form">entrar</button>
+            </form>
+       </div>
+    </div>
     <!-- javascript -->
      <script type="module" src="src/js/modules/script.js"></script>
 
@@ -237,4 +251,4 @@
 </body>
 
 </html>
-</html>
+
