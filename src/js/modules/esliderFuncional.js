@@ -45,4 +45,19 @@ btnNav.forEach((btn, indice)=>{
 })
 })
 
+/* as imagens mudam sozinhas */
+
+const tempoDeTroca = 8000; // Troca a cada 3 segundos (3000ms)
+
+function avancarSlider() {
+    imgAtiva++;
+    if (imgAtiva >= contadorImg) {
+        imgAtiva = 0;
+    }
+    mostrarSlider();
+}
+
+// Inicia a troca automática das imagens
+let intervaloSlider = setInterval(avancarSlider, tempoDeTroca);
+
 
