@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.766);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 9999999999999;
@@ -74,8 +74,13 @@
     border-radius: 50%;
     background-color: #f81e1e;
     color: #fff;
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+
+/* adicionando uma ação para o modal via javascript */
+
+.janela-modal.abrir{
+    display: flex;
 }
 
 
