@@ -19,7 +19,9 @@
     border-radius: 10px;
 }
 
-
+.imagem2 img:hover {
+    transform: scale(1.05);
+}
 
 
 .nossaHist {
@@ -38,6 +40,11 @@
     
 }
 
+.nossaHist:hover {
+    transform: scale(1.05);
+    background-color: #C2410C; 
+}
+
 .contatoSobre {
     margin-left: 10px;
     cursor: pointer;
@@ -53,4 +60,8 @@
     font-weight: 500;
     
     
+}
+
+.contatoSobre:hover {
+     transform: scale(1.05);
 }
