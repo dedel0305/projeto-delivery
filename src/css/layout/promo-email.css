@@ -1,0 +1,68 @@
+.promo-email-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #ffffff;
+}
+
+.promo-email-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.promo-email-titulo {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.promo-email-texto {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo-email-form {
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.promo-email-input {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.promo-email-input:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: #ea580c;
+    box-shadow: 0 0 0 2px #ea580c;
+}
+
+.promo-email-button {
+    background-color: #ea580c;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-email-button:hover {
+    background-color: #c2410c;
+}
