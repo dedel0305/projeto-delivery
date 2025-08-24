@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="src/assets/ico/ico-pizza.svg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/layout/style.css">
+    <link rel="stylesheet" href="src/css/layout/comentarios.css">
+    <link rel="stylesheet" href="src/css/layout/promo-email.css">
     <script type="module" src="src/js/modules/script.js" defer></script>
     
     <title>PizzaGo</title>
@@ -206,14 +208,14 @@
         <div class="boxPromo">
                 <div class="ofertas">
                     <h2 class="oferta1">Oferta Especial da Semana</h2> <br>
-                    <p class="oferta2">Combo Duplo + Batata + Refri por apenas R$ 49,90</p> <br>
-                    <p class="oferta3">Dois hambúrgueres artesanais, porção média de batata frita e dois refrigerantes de 350ml</p>
+                    <p class="oferta2">Pizza Grande + Refrigerante 2L por apenas R$ 59,90</p> <br>
+                    <p class="oferta3">Escolha qualquer pizza grande do nosso cardápio e leve um refrigerante de 2 litros</p>
                     <br>
                     <button class="buttonPromo">Aproveitar Oferta</button>
                 </div>
                 <div class="imagem">
-                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Combo Especial">
+                    <img src="src/assets/img/pizzapromo.jpg" 
+                         alt="Oferta de Pizza">
                 </div>
             </div>
     </section>
@@ -222,7 +224,7 @@
         <div class="boxSobre">
                 <div class="imagem2">
                     <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-                         alt="Equipe Lanchou"
+                         alt="Equipe PizzaGo"
                          width="700px">
                          
                 </div>
@@ -230,8 +232,8 @@
                 <div class="sobre2">
                 <div class="info">
                     <h2 class="h2">Sobre a PizzaGo</h2> <br>
-                    <p class="p1">Fundada em 2018, a Lanchou nasceu da paixão por hambúrgueres artesanais e lanches <br> gourmet. Nosso objetivo é oferecer produtos de alta qualidade, com ingredientes <br> selecionados e preparo cuidadoso.</p> <br>
-                    <p class="p2">Acreditamos que um bom lanche pode transformar o seu dia, por isso nos dedicamos a criar <br>experiências gastronômicas memoráveis, entregues na sua casa com rapidez e carinho.</p> <br>
+                    <p class="p1">Fundada em 2018, a PizzaGo nasceu da paixão por pizzas artesanais e sabores <br> autênticos. Nosso objetivo é oferecer produtos de alta qualidade, com ingredientes <br> selecionados e preparo cuidadoso.</p> <br>
+                    <p class="p2">Acreditamos que uma boa pizza pode transformar o seu dia, por isso nos dedicamos a criar experiências gastronômicas memoráveis, entregues na sua casa com rapidez e carinho.</p> <br>
                     </div>
                     <div class="hist">
                         <button class="nossaHist"><a href=""></a> Nossa História</button>                           
@@ -242,6 +244,7 @@
                     </div>
             </div>
     </section>
+
 
 
         <!-- modal do botão de login -->
@@ -266,5 +269,71 @@
 
 </body>
 
-</html>
+    <section class="comentarios-section">
+        <div class="comentarios-container">
+            <h2 class="comentarios-titulo">O Que Dizem Nossos Clientes</h2>
+            
+            <div class="comentarios-grid">
+                <div class="comentario-card">
+                    <div class="rating">
+                        <div>★★★★★</div>
+                    </div>
+                    <p class="texto">"As pizzas da PizzaGo são incríveis! Sempre bem temperadas e suculentas. O delivery é super rápido também."</p>
+                    <div class="cliente">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente Ana Carolina" class="cliente-avatar">
+                        <div>
+                            <h4 class="cliente-nome">Ana Carolina</h4>
+                            <p class="cliente-info">Cliente desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comentario-card">
+                    <div class="rating">
+                        <div>★★★★★</div>
+                    </div>
+                    <p class="texto">"Adoro pedir na PizzaGo para assistir jogos com os amigos. As porções são generosas e os milk shakes são divinos!"</p>
+                    <div class="cliente">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente Ricardo Almeida" class="cliente-avatar">
+                        <div>
+                            <h4 class="cliente-nome">Ricardo Almeida</h4>
+                            <p class="cliente-info">Cliente desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comentario-card">
+                    <div class="rating">
+                        <div>★★★★☆</div>
+                    </div>
+                    <p class="texto">"Como vegetariana, fiquei impressionada com a qualidade da pizza vegana. Saboroso e bem preparado. Recomendo!"</p>
+                    <div class="cliente">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente Juliana Santos" class="cliente-avatar">
+                        <div>
+                            <h4 class="cliente-nome">Juliana Santos</h4>
+                            <p class="cliente-info">Cliente desde 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <section class="promo-email-section">
+        <div class="promo-email-container">
+            <h2 class="promo-email-titulo">Receba Nossas Promoções</h2>
+            <p class="promo-email-texto">Cadastre-se e seja o primeiro a saber sobre nossas ofertas especiais e novidades no cardápio.</p>
+            
+            <form class="promo-email-form">
+                <input type="email" placeholder="Seu melhor e-mail" class="promo-email-input">
+                <button type="submit" class="promo-email-button">
+                    Cadastrar
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
