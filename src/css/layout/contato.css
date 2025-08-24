@@ -1,0 +1,130 @@
+
+.contato-section {
+    padding-top: 3rem; /* py-12 */
+    padding-bottom: 3rem; /* py-12 */
+    background-color: #ea580c; /* bg-orange-600 */
+    color: #ffffff; /* text-white */
+}
+
+.contato-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 768px) {
+    .contato-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contato-container {
+        max-width: 1024px;
+    }
+}
+
+.contato-flex-container {
+    display: flex;
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+
+@media (min-width: 768px) {
+    .contato-flex-container {
+        flex-direction: row; /* md:flex-row */
+    }
+}
+
+.contato-text-content {
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+@media (min-width: 768px) {
+    .contato-text-content {
+        width: 50%; /* md:w-1/2 */
+        margin-bottom: 0; /* md:mb-0 */
+        padding-right: 2rem; /* md:pr-8 */
+    }
+}
+
+.contato-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.contato-subtitle {
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.contato-info-block {
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.contato-info-title {
+    font-weight: 700; /* font-bold */
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.contato-button {
+    background-color: #ffffff; /* bg-white */
+    color: #ea580c; /* text-orange-600 */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 700; /* font-bold */
+    font-size: 1.125rem; /* text-lg */
+}
+
+.contato-button:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.contato-map-container {
+}
+
+@media (min-width: 768px) {
+    .contato-map-container {
+        width: 50%; /* md:w-1/2 */
+    }
+}
+
+.contato-map-wrapper {
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+}
+
+.contato-map {
+    height: 16rem; /* h-64 */
+    width: 100%; /* w-full */
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+@media (min-width: 768px) {
+    .contato-map {
+        height: 20rem; /* md:h-80 */
+    }
+}
+
+.contato-map-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6b7280; /* text-gray-500 */
+}
+
+.contato-map-icon {
+    font-size: 2.25rem; /* text-4xl */
+    margin-right: 0.5rem; /* mr-2 */
+}
