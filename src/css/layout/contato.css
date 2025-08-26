@@ -90,7 +90,7 @@
 
 @media (min-width: 768px) {
     .contato-map-container {
-        width: 50%; /* md:w-1/2 */
+        width: 50%; 
     }
 }
 
@@ -125,4 +125,42 @@
 .contato-map-icon {
     font-size: 2.25rem; 
     margin-right: 0.5rem; 
+}
+
+@media (max-width: 480px) {
+    .contato-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .contato-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contato-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contato-info-title {
+        font-size: 1rem;
+    }
+
+    .contato-text-content {
+        margin-bottom: 1rem;
+    }
+
+    .contato-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .contato-map-wrapper {
+        padding: 0.75rem;
+    }
+
+    .contato-map {
+        height: 18rem;
+    }
 }

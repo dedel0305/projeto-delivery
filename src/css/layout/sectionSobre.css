@@ -65,3 +65,54 @@
 .contatoSobre:hover {
      transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .boxSobre {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .imagem2 img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .boxSobre h2 {
+        font-size: 1.5rem;
+    }
+
+    .boxSobre p {
+        font-size: 1rem;
+    }
+
+    .hist {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .nossaHist, .contatoSobre {
+        width: 80%;
+        max-width: 250px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxSobre h2 {
+        font-size: 1.2rem;
+    }
+
+    .boxSobre p {
+        font-size: 0.9rem;
+    }
+
+    .nossaHist, .contatoSobre {
+        width: 90%;
+    }
+}
