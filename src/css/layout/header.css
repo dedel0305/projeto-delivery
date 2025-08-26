@@ -1,5 +1,5 @@
 header{
-    width: 100%;   /* adicionei uma largura e altura pro header pois é um menu fixo */
+    width: 100%;
     height:4rem;
    
 }
@@ -60,7 +60,7 @@ font-weight: 500;
     color: #666666a2;
 }
 
-.top-nav {             /* adicionei uma posição fixa na div que compoe os liks de navegaçãodo header */
+.top-nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -89,3 +89,56 @@ font-weight: 500;
   ul li a:hover{
     color: #ea580c;
   }
+
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ea580c;
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .top-nav .logo {
+        margin-right: auto;
+    }
+
+    .top-nav nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .top-nav nav.active {
+        display: block;
+    }
+
+    .top-nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .top-nav ul li {
+        margin: 0.5rem 0;
+        display: block;
+    }
+
+    .top-nav .carrinho-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

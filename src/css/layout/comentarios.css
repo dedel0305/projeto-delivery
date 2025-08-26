@@ -1,5 +1,3 @@
-
-
 .comentarios-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -75,4 +73,38 @@
     color: #6b7281;
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+@media (max-width: 480px) {
+    .comentarios-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .comentario-card {
+        padding: 1rem;
+    }
+
+    .comentario-card .rating {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .comentario-card .texto {
+        font-size: 0.9rem;
+    }
+
+    .comentario-card .cliente-avatar {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .comentario-card .cliente-nome {
+        font-size: 0.9rem;
+    }
+
+    .comentario-card .cliente-info {
+        font-size: 0.75rem;
+    }
 }

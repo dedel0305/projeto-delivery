@@ -49,3 +49,54 @@
 .buttonPromo:hover {
      transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .boxPromo {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    .ofertas {
+        margin-right: 0;
+    }
+
+    .ofertas h2 {
+        font-size: 2.5rem;
+    }
+
+    .ofertas p {
+        font-size: 1rem;
+    }
+
+    .buttonPromo {
+        width: 150px;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ofertas h2 {
+        font-size: 2rem;
+    }
+
+    .ofertas p {
+        font-size: 0.9rem;
+    }
+
+    .buttonPromo {
+        width: 130px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}

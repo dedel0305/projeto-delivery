@@ -66,3 +66,29 @@
 .promo-email-button:hover {
     background-color: #c2410c;
 }
+
+@media (max-width: 480px) {
+    .promo-email-titulo {
+        font-size: 1.5rem;
+    }
+
+    .promo-email-texto {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .promo-email-form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .promo-email-input,
+    .promo-email-button {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .promo-email-input {
+        border-bottom-right-radius: 0.5rem;
+    }
+}

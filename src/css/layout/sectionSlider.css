@@ -4,7 +4,6 @@
     padding: 0 4%;
 }
 
-/* stilo do slider */
 
 .slider {
     height: 100vh;
@@ -16,7 +15,7 @@
     inset: 0;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 0.7s ease-in-out; /* 5s;  /* uma transição nas imagens do slide */
+    transition: opacity 0.7s ease-in-out;
 }
 
 .slider .slider-img img{
@@ -50,7 +49,6 @@
 
 }
 
-/* stilo das setas */
 
 .setas{
     width: 100%;
@@ -83,7 +81,6 @@
 
 }
 
-/* estilos dos botoes de navegaçoes */
 
 .btn-nav-img {
     width: 100%;
@@ -142,7 +139,6 @@
     font-weight: 200;
 }
 
-/* animação dos textos no slider */
 
 @keyframes animatexto{
     100%{
@@ -153,14 +149,14 @@
     
 }
 
-.slider .slider-img.ativo h2, /* animação para o h2 e paragrafo */
+.slider .slider-img.ativo h2,
  .slider .slider-img.ativo p{
     transform: translateY(60px);
     opacity: 0;
     animation: animatexto .5s ease-in-out .7s forwards;
 }
 
-.slider .slider-img.ativo h2 { /* animação para iniciar o h2 ,tera um atraso e 1s */
+.slider .slider-img.ativo h2 {
     animation-delay: 1s ;
 }
 
@@ -169,8 +165,65 @@
     z-index: 111111111;
 }
 
-/* adicionando a class ativo no primeiro de navegação do slider. fica selecionado o primeiro botão */
 
 .btn-nav-img .btn-nav.ativo{
     background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .slider .slider-img .texto-slider {
+        top: 25%;
+        left: 5%;
+        width: 90%;
+        max-width: none;
+    }
+
+    .slider .slider-img .texto-slider h2 {
+        font-size: 3rem;
+    }
+
+    .slider .slider-img .texto-slider .texto-p {
+        font-size: 1rem;
+    }
+
+    .btn-slide {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .setas button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .btn-nav-img {
+        bottom: 20px;
+        gap: 1rem;
+    }
+
+    .btn-nav-img .btn-nav {
+        width: 20px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider .slider-img .texto-slider {
+        top: 15%;
+    }
+
+    .slider .slider-img .texto-slider h2 {
+        font-size: 2rem;
+    }
+
+    .slider .slider-img .texto-slider .texto-p {
+        font-size: 0.8rem;
+    }
+
+    .btn-slide {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
