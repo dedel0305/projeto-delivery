@@ -57,6 +57,12 @@
     background-color: #fee2b1; 
 }
 
+.categoria-item .categoria-icone img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
 .categoria-item h3 {
     font-weight: 700; 
     font-size: 1.125rem; 
