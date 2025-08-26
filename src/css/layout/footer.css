@@ -1,52 +1,45 @@
 .footer-container {
-  background-color: #1f2937;
-  color: #ffffff;
-  padding-top: 3rem;
+  background-color: #111827;
+  color: #9ca3af;
+  padding-top: 2rem;
   padding-bottom: 1.5rem;
 }
 
 .footer-content {
-  max-width: 900px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
-  .footer-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+.footer-brand {
+  flex: 1 1 300px;
+}
+
+.footer-links-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .footer-title {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .footer-text {
   margin-bottom: 1rem;
-}
-
-.footer-social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-social-link {
-  color: #9ca3af;
-}
-
-.footer-social-link:hover {
-  color: #ffffff;
 }
 
 .footer-list {
@@ -57,41 +50,29 @@
 
 .footer-link {
   color: #9ca3af;
+  text-decoration: none;
 }
 
 .footer-link:hover {
   color: #ffffff;
 }
 
-.footer-contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.footer-contact-icon {
-  margin-right: 0.5rem;
-  color: #ea580c;
-}
-
-.footer-payment-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.footer-payment-icon {
-  font-size: 1.5rem;
-  color: #9ca3af;
-}
-
 .footer-bottom {
-  border-top: 1px solid #4b5563;
+  border-top: 1px solid #374151;
   padding-top: 1.5rem;
-  text-align: center;
-  color: #9ca3af;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   font-size: 0.875rem;
 }
 
-.footer-bottom-links {
-  margin-top: 0.5rem;
+.footer-bottom-links a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
 }
