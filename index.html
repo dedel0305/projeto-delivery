@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="src/assets/ico/ico-pizza.svg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/layout/style.css">
+    <link rel="stylesheet" href="src/css/layout/carrinhoModal.css">
     
     <script type="module" src="src/js/modules/script.js" defer></script>
     
@@ -221,6 +222,23 @@
             </form>
        </div>
     </div>   <!-- fim modal do botão de login -->
+
+    <!-- modal do carrinho -->
+    <div class="janela-modal" id="carrinho-modal">
+        <div class="modal">
+            <h2>Seu Carrinho</h2>
+            <button type="button" class="fechar" id="fechar-carrinho">x</button>
+            <div class="carrinho-conteudo">
+                <!-- Conteúdo do carrinho será inserido aqui via JS -->
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <div class="carrinho-total">
+                <h3>Total: R$ 0,00</h3>
+                <button class="btn-finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+    <!-- fim modal do carrinho -->
 
 
 

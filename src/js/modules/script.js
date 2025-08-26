@@ -1,8 +1,13 @@
 import mostrarSlider from '../modules/esliderFuncional.js'
 import abrirModal from '../modules/abrirFecharModal.js'
+import { setupCarrinhoModal } from '../modules/carrinhoModal.js'
+import { setupAddToCartButtons } from '../modules/cartManager.js'
 
 mostrarSlider()
 abrirModal()
+setupCarrinhoModal()
+setupAddToCartButtons()
+
 
 // Menu responsivo
 document.addEventListener('DOMContentLoaded', () => {
